@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEAMER
+% inner theme
+% 
+% Author:
+% Mücahit Kaya
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+
+%----------------------------------------
+%   ITEMIZE
+%----------------------------------------
+\setbeamertemplate{itemize item}[circle]
+
+%----------------------------------------
+%   TOC
+%----------------------------------------
+\setbeamertemplate{section in toc}{
+    \textcolor{freiBlue}{\normalsize\textbullet}\hskip1.5ex\inserttocsection\par
+}
+\setbeamertemplate{subsection in toc}{
+    \hskip2.5ex
+    \small
+    \textcolor{freiBlue}{\textopenbullet} \inserttocsubsection\par
+}
+
+
+
+%----------------------------------------
+\mode<all>

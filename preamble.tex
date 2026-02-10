@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uni-Freiburg BEAMER
+% Preamble
+% 
+% Author:
+% Mücahit Kaya
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------
+%   REFERENCES
+%----------------------------------------
+\usepackage[
+    backend=biber,
+    sorting=none,
+    style=ieee
+]{biblatex}
+\usepackage{csquotes}
+\addbibresource{refs.bib}
+
+%----------------------------------------
+%   FLOATS
+%----------------------------------------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+%----------------------------------------
+%   CAPTIONS
+%----------------------------------------
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\setbeamertemplate{caption}[numbered]
+\captionsetup{justification=centering}
+
+%----------------------------------------
+%   SET THEME
+%----------------------------------------
+\makeatletter
+  \def\beamer@calltheme#1#2#3{%
+    \def\beamer@themelist{#2}
+    \@for\beamer@themename:=\beamer@themelist\do
+    {\usepackage[{#1}]{\beamer@themelocation/#3\beamer@themename}}}
+
+  \def\usefolder#1{
+    \def\beamer@themelocation{#1}
+  }
+  \def\beamer@themelocation{}
+  
+\usefolder{freibeamer}
+\usetheme{frei}
+
+%----------------------------------------
+%   CUSTOM PACKAGES
+%----------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+%----------------------------------------
+%   CUSTOM COMMANDS
+%----------------------------------------
+% Usage: \source{https://example.com} or \source{Author, Journal (Year)}
+\newcommand{\source}[1]{%
+    \vspace{-1.25em}%
+    \caption*{\tiny Source: #1}%
+}

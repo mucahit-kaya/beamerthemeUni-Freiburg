@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uni-Freiburg BEAMER
+% main.tex
+% 
+% Author:
+% Mücahit Kaya
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------
+%   DOCUMENT SPECIFICATION
+%----------------------------------------
+\documentclass[
+11pt, 
+xcolor=x11names,
+aspectratio=169,
+% notes
+% notes=only
+]{beamer}
+
+%----------------------------------------
+%   PREAMBLE: PACKAGES AND CONFIGURATIONS
+%----------------------------------------
+\input{preamble}
+
+%
+%----------------------------------------
+%   PRESENTATION INFORMATION
+%----------------------------------------
+
+\title{Your Presentation Title}
+\subtitle{Your Subtitle}
+\author{Author Name}
+
+\date{\today}
+
+\institute{Physikalisches Institut}
+% footer
+\lfooter{}
+\mfooter{}
+
+%----------------------------------------
+%   TITLEPAGE
+%----------------------------------------
+\begin{document}
+\frame[plain]{\titlepage}
+
+%----------------------------------------
+%   TOC
+%----------------------------------------
+\begin{frame}{Table of Contents}
+\tableofcontents
+\end{frame}
+
+%----------------------------------------
+%   MAIN CONTENT
+%----------------------------------------
+\input{sections/introduction}
+\input{sections/experiment}
+\input{sections/results}
+\input{sections/end}
+
+%----------------------------------------
+%   BIBLIOGRAPHY
+%----------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\printbibliography
+\end{frame}
+
+%----------------------------------------
+\end{document}

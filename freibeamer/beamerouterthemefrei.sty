@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEAMER
+% outer theme
+% 
+% Author:
+% Mücahit Kaya
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+
+%----------------------------------------
+%   TITLE PAGE
+%----------------------------------------
+\setbeamertemplate{title page}{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight,leftskip=\@lrmargin,rightskip=\@lrmargin]{title page}
+        \usebeamerfont{subtitle}\insertsubtitle\par
+        
+        {\usebeamerfont{title}\inserttitle\par}
+        \vspace{1.cm}
+        
+        \usebeamerfont{author}\insertauthor\par
+        \vskip 3em
+        
+        \usebeamerfont{institute}\insertinstitute\par
+        \usebeamerfont{date}\insertdate\par
+
+        \vskip \@lrmargin
+        
+    \end{beamercolorbox}
+    
+    \begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=\@lrmargin}, opacity=0.3]
+        \node[anchor=north east,xshift=2.2cm,yshift=.3cm] at (current page.north east){
+                \includegraphics[scale=0.62]{freibeamer/ufr_circle_logo_white.png}
+        };
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=\@lrmargin}]
+        \node[anchor=north west,xshift=0cm,yshift=0.45cm] at (current page.north west){
+                \includegraphics[scale=0.10]{freibeamer/ufr_logo_white.png}
+        };
+    \end{tikzpicture}
+    
+
+
+
+}
+
+%----------------------------------------
+%   SECTION PAGE
+%----------------------------------------
+\setbeamertemplate{section page}{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight,leftskip=\@lrmargin,rightskip=\@lrmargin]{section page}
+        {\usebeamerfont{section}\insertsection\par}
+        \rule{\textwidth}{0.7mm}
+        \vskip 5em
+    \end{beamercolorbox}
+
+    \begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=\@ftitlemargin,outer sep=0}]
+        \node[anchor=north east,xshift=-0.5cm] at (current page.north east){
+                \includegraphics[scale=0.1]{freibeamer/ufr_logo_blue.png}
+        };
+    \end{tikzpicture}
+}
+
+
+\setbeamertemplate{subsection page}{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight,leftskip=\@lrmargin,rightskip=\@lrmargin]{section page}
+        {\usebeamerfont{section}\insertsubsection\par}
+%        \rule{\textwidth}{0.7mm}
+        \vskip 5em
+    \end{beamercolorbox}
+
+    \begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=\@ftitlemargin,outer sep=0}]
+        \node[anchor=north east,xshift=-0.5cm] at (current page.north east){
+                \includegraphics[scale=0.1]{freibeamer/ufr_logo_blue.png}
+        };
+    \end{tikzpicture}
+}
+
+%----------------------------------------
+%   HEADLINE
+%----------------------------------------
+\setbeamertemplate{headline}{}
+
+%----------------------------------------
+%   NAV SYMBOLS
+%----------------------------------------
+\setbeamertemplate{navigation symbols}{}
+
+%----------------------------------------
+%   FRAMETITLE
+%----------------------------------------
+\setbeamertemplate{frametitle}{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth, rightskip=\@ftitleheight, leftskip=\@ftitlemargin, ht=\@ftitleheight]{frametitle}
+        \vbox to \@ftitleheight{
+        \vfill
+        \usebeamerfont{frametitle}\insertframetitle\par
+        \vfill
+        }
+    \end{beamercolorbox}
+
+}
+
+%----------------------------------------
+%   FOOTLINE
+%----------------------------------------
+\setbeamertemplate{footline}{
+
+    
+    \leavevmode
+    \begin{beamercolorbox}[wd=.333\paperwidth,ht=3ex,dp=\@footermargin,left,leftskip=\@footermargin]{lfooter}
+        \begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=\@ftitlemargin,outer sep=0}]
+        \node[anchor=south west,  xshift=.5cm] at (current page.south west){
+                \includegraphics[scale=0.075]{freibeamer/ufr_logo_blue.png}
+        };
+        \end{tikzpicture}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.333\paperwidth,ht=4ex,dp=\@footermargin,center]{mfooter}
+        \insertsection
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.333\paperwidth,ht=4ex,dp=\@footermargin,right,rightskip=\@footermargin]{rfooter}
+    \insertframenumber{}
+    \end{beamercolorbox}
+    
+
+}
+
+
+%----------------------------------------
+\mode<all>

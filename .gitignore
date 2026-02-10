@@ -1,0 +1,31 @@
+## LaTeX Build Files
+*.aux
+*.bbl
+*.bcf
+*.bcf-SAVE-ERROR
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+## Generated PDF 
+#main.pdf
+
+## Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+## OS Files
+.DS_Store
+Thumbs.db
