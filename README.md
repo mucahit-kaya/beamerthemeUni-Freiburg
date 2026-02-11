@@ -127,7 +127,7 @@ Each section file should follow this pattern:
 
 This project is licensed under the [MIT License](LICENSE).
 
-> **Note:** The University of Freiburg logos included in this template are property of the University of Freiburg and are subject to their [corporate design guidelines](https://uni-freiburg.de/universitaet/corporate-design/). Use of these logos may be restricted to members and affiliates of the university.
+> **Note:** The University of Freiburg logos included in this template are property of the University of Freiburg and are subject to their [corporate design guidelines](https://cd.uni-freiburg.de/). Use of these logos may be restricted to members and affiliates of the university.
 
 ## Acknowledgments
 
