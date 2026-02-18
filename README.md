@@ -20,7 +20,7 @@ A clean, modern [Beamer](https://ctan.org/pkg/beamer) presentation theme based o
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/mucahit-kaya/freibeamer.git
+   git clone https://github.com/mucahit-kaya/beamerthemeUni-Freiburg
    cd freibeamer
    ```
 
